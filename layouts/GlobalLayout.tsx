@@ -1,8 +1,9 @@
-import type { NextPage } from "next";
-import Head from "next/head";
 import React from "react";
-
+import Head from "next/head";
 import { Nav } from "../components/Nav";
+
+import type { NextPage } from "next";
+import { PageContainer } from "../components/blocks/PageContainer";
 
 const GlobalLayout: NextPage = ({ children }) => {
   return (
@@ -13,7 +14,7 @@ const GlobalLayout: NextPage = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Nav />
-      {children}
+      <PageContainer>{children}</PageContainer>
     </>
   );
 };
