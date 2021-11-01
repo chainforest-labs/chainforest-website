@@ -11,7 +11,10 @@ const Nav: FC = () => {
           </Link>
         </span>
         <div>
-          <Link href="/about">About</Link>
+          <Link href="/about">
+            <a className="mr-2">About</a>
+          </Link>
+          <Link href="/news">News</Link>
         </div>
       </div>
     </nav>
