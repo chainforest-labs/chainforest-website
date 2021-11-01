@@ -1,3 +1,5 @@
+/** Can use this file for adding global styles that can't be covered in Tailwind config */
+
 * {
   box-sizing: border-box;
 }
